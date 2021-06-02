@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Files Repository</title>
+</head>
+<body>
+<h1>Files Repository (<span th:text="${filesCount}">0</span>)</h1>
+<div id="fileDescriptor-list">
+    <div th:each="fileDescriptor : ${filesDescriptors}">
+        <a href="#" class="fileDescriptor-link" th:attr="data-id=${fileDescriptor.id}" th:text="${fileDescriptor.fileName}"></a>
+    </div>
+</div>
+</body>
+</html>

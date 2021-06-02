@@ -1,0 +1,5 @@
+/*groups.stream()
+                .map(membersGroup -> membersGroup.getMembers())
+                .flatMap(group -> group.stream())
+                .filter(members -> members.getAge() > targetAge);
+        */
